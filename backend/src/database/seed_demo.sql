@@ -76,28 +76,28 @@ INSERT INTO Services (name, price) VALUES
 -- ============================================================
 
 -- ADMIN
-INSERT INTO Profiles (username, password_hash, role, first_name, last_name, date_of_birth, gender, email, phone, address) VALUES
-('admin01', '$2b$10$bfDXlrPT.rPEAHOGIn82H.JwapIB9P3VQ0Z96rZepjtf1r.brSeZ6', 'ADMIN', 'An', 'Nguyen', '1988-05-10', 'Male', 'admin01@medsys.vn', '0901000001', 'Q1, Ho Chi Minh');
+INSERT INTO Profiles (username, password_hash, role, first_name, last_name, date_of_birth, gender, email, phone, address, is_deleted) VALUES
+('admin01', '$2b$10$bfDXlrPT.rPEAHOGIn82H.JwapIB9P3VQ0Z96rZepjtf1r.brSeZ6', 'ADMIN', 'An', 'Nguyen', '1988-05-10', 'Male', 'admin01@medsys.vn', '0901000001', 'Q1, Ho Chi Minh', 0);
 
 -- RECEPTIONIST
-INSERT INTO Profiles (username, password_hash, role, first_name, last_name, date_of_birth, gender, email, phone, address) VALUES
-('reception01', '$2b$10$bfDXlrPT.rPEAHOGIn82H.JwapIB9P3VQ0Z96rZepjtf1r.brSeZ6', 'RECEPTIONIST', 'Chi', 'Le', '1994-03-12', 'Female', 'reception01@medsys.vn', '0902000001', 'Q3, Ho Chi Minh');
+INSERT INTO Profiles (username, password_hash, role, first_name, last_name, date_of_birth, gender, email, phone, address, is_deleted) VALUES
+('reception01', '$2b$10$bfDXlrPT.rPEAHOGIn82H.JwapIB9P3VQ0Z96rZepjtf1r.brSeZ6', 'RECEPTIONIST', 'Chi', 'Le', '1994-03-12', 'Female', 'reception01@medsys.vn', '0902000001', 'Q3, Ho Chi Minh', 0);
 
 -- DOCTOR 1 (profile_id = 3)
-INSERT INTO Profiles (username, password_hash, role, first_name, last_name, date_of_birth, gender, email, phone, address) VALUES
-('doctor01', '$2b$10$bfDXlrPT.rPEAHOGIn82H.JwapIB9P3VQ0Z96rZepjtf1r.brSeZ6', 'DOCTOR', 'Minh', 'Tran', '1985-07-25', 'Male', 'doctor01@medsys.vn', '0903000001', 'Q1, Ho Chi Minh');
+INSERT INTO Profiles (username, password_hash, role, first_name, last_name, date_of_birth, gender, email, phone, address, is_deleted) VALUES
+('doctor01', '$2b$10$bfDXlrPT.rPEAHOGIn82H.JwapIB9P3VQ0Z96rZepjtf1r.brSeZ6', 'DOCTOR', 'Minh', 'Tran', '1985-07-25', 'Male', 'doctor01@medsys.vn', '0903000001', 'Q1, Ho Chi Minh', 0);
 
 -- DOCTOR 2 (profile_id = 4)
-INSERT INTO Profiles (username, password_hash, role, first_name, last_name, date_of_birth, gender, email, phone, address) VALUES
-('doctor02', '$2b$10$bfDXlrPT.rPEAHOGIn82H.JwapIB9P3VQ0Z96rZepjtf1r.brSeZ6', 'DOCTOR', 'Ha', 'Pham', '1987-11-03', 'Female', 'doctor02@medsys.vn', '0904000001', 'QBT, Ho Chi Minh');
+INSERT INTO Profiles (username, password_hash, role, first_name, last_name, date_of_birth, gender, email, phone, address, is_deleted) VALUES
+('doctor02', '$2b$10$bfDXlrPT.rPEAHOGIn82H.JwapIB9P3VQ0Z96rZepjtf1r.brSeZ6', 'DOCTOR', 'Ha', 'Pham', '1987-11-03', 'Female', 'doctor02@medsys.vn', '0904000001', 'QBT, Ho Chi Minh', 0);
 
 -- PATIENT 1 (profile_id = 5)
-INSERT INTO Profiles (username, password_hash, role, first_name, last_name, date_of_birth, gender, email, phone, address) VALUES
-('patient01', '$2b$10$bfDXlrPT.rPEAHOGIn82H.JwapIB9P3VQ0Z96rZepjtf1r.brSeZ6', 'PATIENT', 'Mai', 'Nguyen', '2004-10-21', 'Female', 'patient01@medsys.vn', '0905000001', 'Q7, Ho Chi Minh');
+INSERT INTO Profiles (username, password_hash, role, first_name, last_name, date_of_birth, gender, email, phone, address, is_deleted) VALUES
+('patient01', '$2b$10$bfDXlrPT.rPEAHOGIn82H.JwapIB9P3VQ0Z96rZepjtf1r.brSeZ6', 'PATIENT', 'Mai', 'Nguyen', '2004-10-21', 'Female', 'patient01@medsys.vn', '0905000001', 'Q7, Ho Chi Minh', 0);
 
 -- PATIENT 2 (profile_id = 6)
-INSERT INTO Profiles (username, password_hash, role, first_name, last_name, date_of_birth, gender, email, phone, address) VALUES
-('patient02', '$2b$10$bfDXlrPT.rPEAHOGIn82H.JwapIB9P3VQ0Z96rZepjtf1r.brSeZ6', 'PATIENT', 'Binh', 'Tran', '1999-03-14', 'Male', 'patient02@medsys.vn', '0906000001', 'Thu Duc, Ho Chi Minh');
+INSERT INTO Profiles (username, password_hash, role, first_name, last_name, date_of_birth, gender, email, phone, address, is_deleted) VALUES
+('patient02', '$2b$10$bfDXlrPT.rPEAHOGIn82H.JwapIB9P3VQ0Z96rZepjtf1r.brSeZ6', 'PATIENT', 'Binh', 'Tran', '1999-03-14', 'Male', 'patient02@medsys.vn', '0906000001', 'Thu Duc, Ho Chi Minh', 0);
 
 -- ============================================================
 -- BƯỚC 7: Doctors (2 bác sĩ) - VARCHAR(6) PRIMARY KEY

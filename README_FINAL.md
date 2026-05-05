@@ -140,7 +140,7 @@ npm run dev
 
 ```powershell
 # Mở terminal 2
-cd HeThongQuanLyPhongKham/backend
+cd HeThongQuanLyPhongKham/frontend
 cd ../frontend/frontend
 npm install
 npm run dev

@@ -16,7 +16,7 @@ CREATE TABLE Profiles (
     address         VARCHAR(255),
     created_at      TIMESTAMP       DEFAULT CURRENT_TIMESTAMP,
     updated_at      TIMESTAMP       DEFAULT CURRENT_TIMESTAMP,
-    is_deleted      BOOLEAN
+    is_deleted      BOOLEAN         DEFAULT FALSE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE Specialties (

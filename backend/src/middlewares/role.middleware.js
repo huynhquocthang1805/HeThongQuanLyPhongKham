@@ -46,42 +46,22 @@ export function isValidRole(role) {
  */
 export function authorizeRoles(...allowedRoles) {
     return (req, res, next) => {
-        // TEMPORARILY DISABLED FOR DEBUG - Comment out to re-enable
-        next();
-        return;
-        
-        /* RE-ENABLE THIS LATER
-        // Check if user is authenticated
         if (!req.user) {
-            return res.status(401).json({
-                success: false,
-                message: 'Yêu cầu xác thực.'
-            });
+            return res.status(401).json({ success: false, message: 'Yêu cầu xác thực.' });
         }
-        
         const userRole = req.user.role;
-        
-        // Validate that user role is valid
         if (!isValidRole(userRole)) {
-            return res.status(403).json({
-                success: false,
-                message: 'Vai trò người dùng không hợp lệ.'
-            });
+            return res.status(403).json({ success: false, message: 'Vai trò người dùng không hợp lệ.' });
         }
-        
-        // Check if user's role is in allowed roles
         if (!allowedRoles.includes(userRole)) {
             return res.status(403).json({
                 success: false,
                 message: `Không có quyền truy cập. Vai trò yêu cầu: ${allowedRoles.join(', ')}`
             });
         }
-        
         next();
-        */
     };
 }
-
 /**
  * Shorthand for admin-only routes
  */
