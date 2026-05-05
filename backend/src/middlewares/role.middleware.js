@@ -46,11 +46,6 @@ export function isValidRole(role) {
  */
 export function authorizeRoles(...allowedRoles) {
     return (req, res, next) => {
-        // TEMPORARILY DISABLED FOR DEBUG - Comment out to re-enable
-        next();
-        return;
-        
-        /* RE-ENABLE THIS LATER
         // Check if user is authenticated
         if (!req.user) {
             return res.status(401).json({
@@ -78,7 +73,6 @@ export function authorizeRoles(...allowedRoles) {
         }
         
         next();
-        */
     };
 }
 
